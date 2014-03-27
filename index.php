@@ -32,15 +32,19 @@
   </head>
   <body style="background-image: url('<?php echo getImageAsString() ?>')">
 
-  <div id="logo">
+	<div id="logo">
 		<img src="img/waa-logo.png" alt="Win&Awesome" />
-  </div>
+	</div>
+
+	<footer>
+		
+	<p>A Win&Awesome production. Image via <?php echo getImageAttributionLink() ?></p>
+
+	</footer>
 
 	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 	<script src="js/jquery.parallax.min.js"></script>
-
-
-  <script src="js/winandawesome.min.js"></script>
+	<script src="js/winandawesome.min.js"></script>
 
   </body>
   </html>

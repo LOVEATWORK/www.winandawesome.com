@@ -6,8 +6,9 @@
 	$cachefile = "instagram_cache/tags.cache";
 	$tmpfile = "instagram_cache/tmp.cache";
 	$objects = array();
-	$count = 25;
+	$count = 100;
 	$json = null;
+	$currentImage = null;
 
 	
 	// If the file exists, and hasn't expired, grab it from disk
@@ -67,12 +68,23 @@
 
 	function getImageAsHTML() {
 		$img = getRandomItem();
+		global $currentImage;
+
+		$currentImage = $img;
+
 		return sprintf("<img src='%s' title='%s' alt='%s' />", $img["image"], $img["nick"], $img["time"]);
 	}
 
 	function getImageAsString() {
+		global $currentImage;
 		$img = getRandomItem();
+		$currentImage = $img;
 		return $img["image"];
+	}
+
+	function getImageAttributionLink() {
+		global $currentImage;
+		return sprintf("<a href='%s'>%s</a>", $currentImage["link"], $currentImage["nick"]);
 	}
 
 ?>
