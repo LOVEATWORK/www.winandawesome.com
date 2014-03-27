@@ -1,0 +1,54 @@
+@import "fluid_grid.less";
+@import "mixins.less";
+
+body {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+.parallax-viewport {
+    position: relative;     /* relative, absolute, fixed */
+    overflow: hidden;
+    text-align: center;
+    background: #FFF;
+}
+.parallax-layer {
+    position: absolute;
+}
+
+#logo {
+
+	width: 300px;
+	height: 300px;
+
+	.center(-150px, -150px);
+
+	img {
+		width: 100%;
+		.rounded(10px);
+		.opacity(0.9);	
+	}
+	
+}
+
+
+@media all and (min-width: 50em) {
+	#logo {
+		width: 600px;
+		.center(-300px, -300px);
+	}
+}
+
+
+@media all and (min-width: 70em) {
+	#logo {
+		width: 800px;
+		.center(-400px, -400px);
+	}
+}

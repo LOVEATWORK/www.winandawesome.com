@@ -42,7 +42,7 @@
 
 	// $insta = getRandomItem($json);
 	
-	echo getImageAsHTML($json);
+	// echo getImageAsHTML();
 
 	
 	function createImage($value) {
@@ -60,15 +60,19 @@
 		return $image;
 	}
 
-	function getRandomItem($arr) {
-		return $arr[array_rand($arr)];
+	function getRandomItem() {
+		global $json;
+		return $json[array_rand($json)];
 	}
 
-	function getImageAsHTML($arr) {
-
-		$img = getRandomItem($arr);
+	function getImageAsHTML() {
+		$img = getRandomItem();
 		return sprintf("<img src='%s' title='%s' alt='%s' />", $img["image"], $img["nick"], $img["time"]);
+	}
 
+	function getImageAsString() {
+		$img = getRandomItem();
+		return $img["image"];
 	}
 
 ?>
