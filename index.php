@@ -14,7 +14,7 @@
 
 	<title>
 	  
-	    win & awesome
+	    WIN & AWESOME
 	  
 	</title>
 
@@ -33,12 +33,12 @@
   <body style="background-image: url('<?php echo getImageAsString() ?>')">
 
 	<div id="logo">
-		<img src="img/waa-logo.png" alt="Win&Awesome" />
+		<img src="img/waa-logo.png" alt="Win & Awesome" />
 	</div>
 
 	<footer>
 		
-	<p>A Win&Awesome production. Image via <?php echo getImageAttributionLink() ?></p>
+	<p>A WIN & AWESOME production. Image via <?php echo getImageAttributionLink() ?></p>
 
 	</footer>
 
