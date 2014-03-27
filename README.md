@@ -1,7 +1,7 @@
-WIN&AWESOME 1.0
+WIN & AWESOME ONE
 ----
 
 This is the first website.
 
 
-(c) win&awesome
+&copy; WIN & AWESOME
